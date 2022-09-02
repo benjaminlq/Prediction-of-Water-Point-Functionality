@@ -1,6 +1,10 @@
 # <center> Prediction of Water Point Functionality </center>
 
-
+![](https://img.shields.io/badge/Status-Completed-red)
+![](https://img.shields.io/badge/Domain-Social-blue)
+![](https://img.shields.io/badge/Language-Python-green)
+![](https://img.shields.io/badge/Package-Scikit--Learn-orange)
+![](https://img.shields.io/badge/Package-Pandas-orange)
 
 ![image](https://user-images.githubusercontent.com/99384454/188149456-101445fe-6efa-4c36-bfe7-924fad606700.png)
 

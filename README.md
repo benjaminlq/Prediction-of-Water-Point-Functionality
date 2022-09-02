@@ -1,8 +1,8 @@
 # <center> Prediction of Water Point Functionality </center>
 
-![](https://img.shields.io/badge/Status-Completed-red)
+![](https://img.shields.io/badge/Status-Completed-green)
 ![](https://img.shields.io/badge/Domain-Social-blue)
-![](https://img.shields.io/badge/Language-Python-green)
+![](https://img.shields.io/badge/Language-Python-lightgreen)
 ![](https://img.shields.io/badge/Package-Scikit--Learn-orange)
 ![](https://img.shields.io/badge/Package-Pandas-orange)
 

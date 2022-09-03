@@ -55,7 +55,7 @@ lr_best_coef.sort_values(by = 'magnitude', ascending = False)[:10]
 ![image](https://user-images.githubusercontent.com/99384454/188166577-207a5512-7be1-464d-ab08-52b614736fd4.png)
 
 ### 2. Decision Tree
-Based on the base fully grown decision tree, I performed greedy Post-Pruning procedure using Cost Complexity Pruning, which assign a cost for each additional node inside a tree. The more nodes there are, the higher penalty that the tree receives while calculating cost function. The purpose of this procedure is to reduce the effect of overfitting while reducing the chance that we may potentially miss out important branch which may occur when we perform Pre-Pruning. This method, however, incur significantly longer training time, as we prune backward and considered all possible trees in a greedy manner.
+Based on the base fully grown decision tree, I performed greedy Post-Pruning procedure using Cost Complexity Pruning, which assign a cost for each additional node inside a tree. The more nodes there are, the higher penalty that the tree receives while calculating cost function. The purpose of this procedure is to reduce the effect of overfitting while reducing the chance that I may potentially miss out important branch which may occur when I perform Pre-Pruning. This method, however, incur significantly longer training time, as I prune backward and considered all possible trees in a greedy manner.
 ![image](https://user-images.githubusercontent.com/99384454/188168071-d0776592-17e8-467d-adb2-7f60254b9a59.png) <br>
 ![image](https://user-images.githubusercontent.com/99384454/188168112-9d9bbbb4-4348-4e5e-821c-9c9582fc0c92.png) <br>
 ![image](https://user-images.githubusercontent.com/99384454/188168139-e18ff21f-ed78-47ce-939d-0d09a521e7cc.png) <br>
@@ -96,7 +96,7 @@ y_pred = 1*(pred_prob[:,1] >= pred_prob[:,0])
 y_train_nb = 1*(train_prob[:,1] >= train_prob[:,0])
 ```
 
-### Ensemble Models
+### 4. Ensemble Models
 #### AdaBoost
 ```
 ada = ensemble.AdaBoostClassifier(base_estimator = tree.DecisionTreeClassifier(criterion = 'gini', random_state = 2021),                                       
@@ -119,7 +119,7 @@ xgb.fit(x_train, y_train)
 |AUC|0.700|0.7324|0.7327|0.7330|0.7496|0.7623|0.7596|0.7812|0.7598|0.7652|
 
 ## Conclusion
-In this exercise, we built several Machine Learning models to predict the water point functionality in Nigeria using Naive Bayes classifiers, Logistic Regression Models, Decision Tree Models and Ensemble Models. The result for the models can be summarized in the table below. RandomForest has the highest performance (**83.2%**) whereas Naive Bayes classifier yields the worst performance based on test dataset.
+In this exercise, I built several Machine Learning models to predict the water point functionality in Nigeria using Naive Bayes classifiers, Logistic Regression Models, Decision Tree Models and Ensemble Models. The result for the models can be summarized in the table below. RandomForest has the highest performance (**83.2%**) whereas Naive Bayes classifier yields the worst performance based on test dataset.
 
 ## References
 - https://www.waterpointdata.org
